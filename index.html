@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+<body>
+  <main class="flex">
+    <picture>
+      <source media="(min-width: 768px)" srcset="./assets/images/illustration-sign-up-desktop.svg">
+      <img src="./assets/images/illustration-sign-up-mobile.svg" alt="illustration">
+    </picture>
+    <section class="flex">
+      <div class="flex component-info">
+        
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li><img src="./assets/images/icon-list.svg" alt="check icon">Product discovery and building what matters</li>
+          <li><img src="./assets/images/icon-list.svg" alt="check icon">Measuring to ensure updates are a success</li>
+          <li><img src="./assets/images/icon-list.svg" alt="check icon">And much more!</li>
+        </ul>
+      </div>
+      <form action="" class="flex" novalidate>
+        <div class="flex input-group">
+          <label for="email">Email address <span id="error-message">Valid email required</span></label>
+          <input type="email" placeholder="email@company.com" id="email" required>
+
+        </div>
+        <button type="submit">Subscribe to monthly newsletter</button>
+      </form>
+    </section>
+  </main>
+
+  <section id="success-page">
+    <div class="flex success-info">
+      <img src="./assets/images/icon-success.svg" alt="success-icon">
+      <div class="flex success-info-text">
+        <h1>Thanks for subscribing!</h1>
+        <p>A confirmation email has been sent to <span id="user-email"></span>. Please open it and click the button inside to confirm your subscription</p>
+      </div>
+    </div>
+    <button id="success-button">Dismiss message</button>
+  </section>
+
+  <script defer src="./assets/js/index.js"></script>
+  
+</body>
+</html>
